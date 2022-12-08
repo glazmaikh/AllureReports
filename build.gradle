@@ -6,6 +6,10 @@ plugins {
 group 'com.orlovskiy'
 version '1.0-SNAPSHOT'
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 allure {
     report { //секция репорта
         version.set("2.20.1")
